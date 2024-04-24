@@ -18,3 +18,4 @@ export const cities = pgTable('cities', {
   countryId: integer('country_id').references(() => countries.id),
   popularity: popularityEnum('popularity'),
 });
+
