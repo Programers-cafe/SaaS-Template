@@ -13,12 +13,12 @@
     "start": "tsx watch -r dotenv/config index.ts",
     "introspect": "drizzle-kit introspect:pg --config=drizzle.config.ts",
     "generate": "drizzle-kit generate:pg --config=drizzle.config.ts"
-
   },
   "dependencies": {
+    "@auth/core": "^0.30.0",
     "@neondatabase/serverless": "^0.9.1",
-    "drizzle-orm": "^0.30.9",
     "dotenv-cli": "^7.4.1",
+    "drizzle-orm": "^0.30.9",
     "postgres": "^3.4.4"
   },
   "devDependencies": {
