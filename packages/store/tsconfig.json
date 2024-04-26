@@ -1,0 +1,16 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+    "lib": ["es2020", "dom"]
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "dist"]
+  // "references": [
+  //   { "path": "../common" },
+  //   { "path": "../i18n" },
+  //   { "path": "../secure-background" },
+  //   { "path": "../secure-clients" }
+  // ]
+}
