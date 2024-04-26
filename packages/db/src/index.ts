@@ -3,4 +3,4 @@ import * as schema from "./schema/index";
 export { schema };
 export * from "drizzle-orm";
 
-export * as db from "./db"; 
+export  {db} from "./db"; 
