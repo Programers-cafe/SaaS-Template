@@ -1,8 +1,10 @@
 {
   "name": "@saas/store",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "recoil": "^0.7.7"
-  },
-  "exports": {
-    "./useBalance": "./src/hooks/useBalance"
-}
+    "recoil": "^0.7.7",
+    "react": "^18.2.0",
+    "@repo/common": "*"
+  }
 }

@@ -8,7 +8,7 @@ export const {
   auth,
 } = NextAuth({
   adapter: DrizzleAdapter(db),
-  providers: [GitHub ({ clientId: GITHUB_CLIENT_ID, clientSecret: GITHUB_CLIENT_SECRET })],
+  providers: [GitHub ({ clientId: process.env.GITHUB_CLIENT_ID, clientSecret: process.env.GITHUB_CLIENT_SECRET })],
   callbacks: {
     async session({ session, user, token }) {
       return session;
